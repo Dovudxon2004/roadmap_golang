@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	roadmap.CarIndustry()
+	roadmap.SlicesChange()
 }

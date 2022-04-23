@@ -25,3 +25,20 @@ func CarIndustry() {
 		fmt.Println("you're good")
 	}
 }
+
+func SliceOfStructs() {
+	sl := []struct {
+		name string
+		cost int
+	}{
+		{"gentra", 150},
+		{"malibu", 300},
+		{"trailblazer", 600},
+		{"tahoe", 900},
+	}
+	for _, v := range sl {
+		if v.cost > 500 {
+			fmt.Println(v.name)
+		}
+	}
+}
