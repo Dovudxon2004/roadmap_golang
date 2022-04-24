@@ -10,7 +10,6 @@ func ArraysDontChange() {
 }
 func SlicesChange() {
 	sl := []int{1, 2, 3, 4, 5}
-	sl[6] = 5
 	sl1 := sl
 	fmt.Printf("%d, %d", len(sl1), cap(sl1))
 	sl1 = append(sl1, 6)
