@@ -65,7 +65,7 @@ func (wf *WellsFargo) Deposit(i int) {
 func (wf *WellsFargo) Withdraw(i int) error {
 	NewBalance := wf.Balance - i
 	if NewBalance < 0 {
-		return errors.New("Insufficient funds")
+		return errors.New("insufficient funds")
 	}
 	wf.Balance -= i
 	return nil

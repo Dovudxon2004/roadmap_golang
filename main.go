@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	roadmap.Interfaces2()
+	roadmap.Composition()
 }
