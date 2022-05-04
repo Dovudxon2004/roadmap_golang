@@ -24,5 +24,5 @@ func Composition() {
 	chapa := Dog{"orange", "simple", 4}
 	chase := Cat{Dog{"black", "Swedish", 3}}
 	chapa.speak()
-	chase.Dog.speak()
+	chase.speak()
 }

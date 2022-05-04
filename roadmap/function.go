@@ -42,14 +42,3 @@ func FizzBuzz(n int) []string {
 	}
 	return arr
 }
-func IsPalindrome(x int) bool {
-	s := fmt.Sprintf("%v", x)
-	runes := make([]rune, len(s))
-	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
-		runes[i], runes[j] = rune(s[j]), rune(s[i])
-	}
-	if string(runes) == s {
-		return true
-	}
-	return false
-}
